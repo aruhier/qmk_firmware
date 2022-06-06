@@ -1,6 +1,15 @@
 VIA_ENABLE = yes
-RGB_MATRIX_ENABLE = yes
+LTO_ENABLE = yes
+
 BOOTMAGIC_ENABLE = lite
+# The keymap doesn't use magic keycodes.
+MAGIC_ENABLE = no
+CONSOLE_ENABLE = no
+COMMAND_ENABLE = no
+MOUSEKEY_ENABLE = no
+MUSIC_ENABLE = no
+
+RGB_MATRIX_ENABLE = yes
 
 IDLE_TIMEOUT_ENABLE = yes
 STARTUP_NUMLOCK_ON = yes

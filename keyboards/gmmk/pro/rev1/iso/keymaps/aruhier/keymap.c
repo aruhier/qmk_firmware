@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 bool rgb_matrix_indicators_user(void) {
     // RGB COLOR, in HSV.
-    HSV led_hsv = {.h = 0, .s = 255};
+    HSV led_hsv = {.h = 7, .s = 255};
     // led_power is the V value of the HSV.
     static uint8_t led_power = 255;
 

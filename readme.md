@@ -34,3 +34,21 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Official Website
 
 [qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+
+## Build and flash (aruhier)
+
+The firmware is in `keyboards/gmmk/pro/rev1/iso/aruhier/`. A readme has more info.
+
+To compile the firmware:
+
+```
+qmk compile -kb gmmk/pro/iso -km aruhier -j ${NUM_THREADS}
+```
+
+To flash it, first turn the keyboard in flash mode (`Fn + Backspace`), then:
+
+```
+qmk flash -kb gmmk/pro/iso -km aruhier
+```
+
+For convenience, run `./build.sh` or `./flash.sh`.

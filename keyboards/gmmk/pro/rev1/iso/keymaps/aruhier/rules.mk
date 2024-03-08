@@ -15,5 +15,7 @@ IDLE_TIMEOUT_ENABLE = yes
 STARTUP_NUMLOCK_ON = yes
 
 DEBOUNCE_TYPE = asym_eager_defer_pk
+# The default 5ms debounce results in doubled inputs (mostly from the space bar).
+DEBOUNCE = 8
 USB_POLLING_INTERVAL_MS = 1
 QMK_KEYS_PER_SCAN = 12
